@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Note App</string>
+    <string name="hello">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="image_content_description">this is an image</string>
+    <string name="note_title_hint">Note Title...</string>
+    <string name="note_text_hint">Note text...</string>
+    <string name="date_time_hint">October 10, 2012 6:35pm</string>
+    
+</resources>

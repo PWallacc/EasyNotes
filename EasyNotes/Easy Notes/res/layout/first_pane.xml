@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" 
+	    android:weightSum="1.0">
+	    
+		<EditText
+		    android:id="@+id/note_title"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="0dp"
+		    android:singleLine="true"
+		    android:inputType="text"
+		    android:layout_weight=".70"
+		    android:hint="@string/note_title_hint" />
+		
+		<ImageView 
+		    android:id="@+id/title_image"
+		    android:layout_weight=".30"
+		    android:layout_width="0dp"
+		    android:layout_height="35dp"
+		    android:layout_gravity="right"
+		    android:contentDescription="@string/image_content_description"
+		    android:src="@drawable/title_text" />
+	</LinearLayout>
+		
+  	<EditText
+  	    android:id="@+id/note_text"
+	    android:singleLine="false"
+	    android:inputType="textMultiLine"
+	    android:maxLength="600"
+	    android:lines="8"
+	    android:minLines="8"
+	    android:gravity="top|left"
+	    android:maxLines="8"
+	    android:layout_height="180dp"
+	    android:layout_width="fill_parent"
+	    android:scrollbars="vertical"
+	    android:hint="@string/note_text_hint" />
+  	
+  	<LinearLayout
+        android:id="@+id/linear_layout_2"
+        android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" 
+	    android:weightSum="1.0">
+  	
+  	    <EditText
+		    android:id="@+id/date_display"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:singleLine="true"
+		    android:inputType="text"
+		    android:layout_weight=".65"
+		    android:hint="@string/date_time_hint" />
+  	    <EditText
+		    android:id="@+id/time_display"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:singleLine="true"
+		    android:inputType="text"
+		    android:layout_weight=".35"
+		    android:hint="@string/date_time_hint" />
+  	    	    	    
+  	</LinearLayout>
+  	
+  	<LinearLayout
+        android:id="@+id/linear_layout_3"
+        android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" 
+	    android:weightSum="1.0">
+  	  	
+  	  	<ImageButton
+	        android:id="@+id/add_note_button"
+		    android:contentDescription="@string/image_content_description"
+	        android:layout_width="wrap_content"
+		    android:layout_weight=".60"
+	        android:layout_height="wrap_content"  
+	        android:src="@drawable/clipboard" />	    
+ 	  	    	      	  	
+  	  	<ImageButton
+	        android:id="@+id/time_change_button"
+		    android:contentDescription="@string/image_content_description"
+	        android:layout_width="wrap_content"
+		    android:layout_weight=".20"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/clock" />	   
+  	  	
+  	  	<ImageButton
+	        android:id="@+id/date_change_button"
+		    android:contentDescription="@string/image_content_description"
+	        android:layout_width="wrap_content"
+		    android:layout_weight=".20"
+	        android:layout_height="wrap_content"   
+	        android:src="@drawable/calendar" />	   
+	         
+	    	    	        
+</LinearLayout>
+  	
+	
+</LinearLayout>
